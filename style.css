@@ -1,0 +1,98 @@
+#conteneur1
+{
+
+display:flex; 
+
+flex-direction: row;
+}
+
+.header
+{
+  display:flex;
+  
+  flex-direction: row;
+}
+
+.element2
+{
+  display:flex;
+  
+  flex-direction: row-reverse;
+}
+.hebergements {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-bottom: 40px;
+  border-radius: 0;
+}
+.exemple_hebergement {
+ 
+  background-color: black;
+  border: 1 px  solid black;
+  border-radius: 10px 5px 10 px 5px;
+  
+}
+
+.rating1 a {
+  color: blue;
+  text-decoration: none;
+  transition: color .4s;
+}
+
+.rating2 a {
+  color: blue;
+  text-decoration: none;
+  transition: color .4s;
+}
+
+.rating3 a {
+  color: blue;
+  text-decoration: none;
+  transition: color .4s;
+}
+
+.rating4 a {
+  color: blue;
+  text-decoration: none;
+  transition: color .4s;
+}
+
+.rating5 a {
+  color: blue;
+  text-decoration: none;
+  transition: color .4s;
+}
+
+.rating6 a {
+  color: blue;
+  text-decoration: none;
+  transition: color .4s;
+}
+
+.popularité
+{
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-bottom: 40px;
+  border-radius: 0;
+}
+
+
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  padding: 0 15px 0 15px;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  
+}
+
+.footer-bloc
+{
+  display:flex; 
+  flex-direction: column;
+  
+}
