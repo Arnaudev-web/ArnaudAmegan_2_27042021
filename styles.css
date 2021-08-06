@@ -600,7 +600,7 @@ footer{
     
       height: 3px;
     
-        background-color: grey;
+        background-color:rgb(242,242,242);
         font-size:8px;
         position: relative;
         top: 10px;
@@ -635,7 +635,7 @@ footer{
     display: block;
     content: "";
     height: 3px;
-    background-color: grey;
+    background-color:rgb(242,242,242);
     font-size:8px;
     position: relative;
     top: 10px
