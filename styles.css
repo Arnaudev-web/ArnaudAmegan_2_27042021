@@ -662,12 +662,7 @@ footer{
         width: 50%;
         text-align: center;
     }
-    /*
-    .phoneHeader a:first-of-type::before{
-        top: unset;
-        bottom: -10px;
-    }
-    */
+
     .noPhone{
         display: none;
     }
