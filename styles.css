@@ -24,8 +24,6 @@ img{
   display: block;
 }
 
-
-
 /* header start */
 
 .top{
@@ -37,8 +35,6 @@ img{
     height: 100px;
     font-size: 1rem;
 }
-
-
 
 .logoHeader{
     margin-left: 2rem;  
@@ -55,9 +51,6 @@ color:rgb(24, 24, 24);
 -webkit-transition: color;
 transition: color;
 }
-
-
-
 
 .hebergement:hover::before{
   display: block;
@@ -99,7 +92,6 @@ top: -33px;
     color: rgb(35,105,243);   
   }
 
-
 .inscrire
 {
 grid-row: 2; 
@@ -111,9 +103,7 @@ font-weight: bold;
 
 /* header end */
 
-
 /* Recherche et filtre start */
-
 
 .searchTitle h1{
     margin-top: 2rem;
@@ -258,7 +248,6 @@ font-weight: bold;
 
 /* Location start */
 
-
 .hebergement-global{
     display: flex;
 }
@@ -377,8 +366,7 @@ font-weight: bold;
     font-size: 1.35rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-   
+    justify-content: space-between; 
 }
 
 .populaires-container .heberg:first-of-type{
@@ -412,7 +400,6 @@ font-weight: bold;
 .populaires-container .heberg-txt p {
     margin-top: -2rem;
     
-
 }
 
 .populaires-container .heberg:nth-of-type(1) .heberg-bg{
@@ -726,6 +713,5 @@ footer{
         width: 100%;
         margin-left: 2rem;
     }
-  }
   
   /* Media queries end */
