@@ -64,14 +64,14 @@ transition: color;
   content: "";
   height: 3px;
   top: -33px; 
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(35,105,243);
   font-size:8px;
   position: relative;
  
 }
 
 .hebergement:hover{
-    color: rgb(0, 0, 255);
+    color: rgb(35,105,243);
        
   }
 
@@ -88,7 +88,7 @@ color:rgb(24, 24, 24);
 display: block;
 content: "";
 height: 3px;
-background-color: rgb(0, 0, 255);
+background-color: rgb(35,105,243);
 font-size:8px;
 position: relative;
 top: -33px;
@@ -96,7 +96,7 @@ top: -33px;
   }
 
   .activites:hover{
-    color: rgb(0, 0, 255);     
+    color: rgb(35,105,243);   
   }
 
 
@@ -105,7 +105,7 @@ top: -33px;
 grid-row: 2; 
 grid-column:4; 
 text-align:center;
-color: rgb(0, 0, 255);
+color:rgb(35,105,243);
 font-weight: bold;
 }
 
@@ -159,7 +159,7 @@ font-weight: bold;
 
 .searchRight{
     width: 130px;
-    background-color: #0065FC;
+    background-color: rgb(35,105,243);
     border-radius: 0 15px 15px 0;
 }
 
@@ -224,7 +224,7 @@ font-weight: bold;
 }
 
 .filterDiv .filter-left i{
-    color: rgb(0, 0, 255);
+    color: rgb(35,105,243);
 }
 
 
@@ -236,7 +236,7 @@ font-weight: bold;
 }
 
 .searchText i{
-    color: #0065FC;
+    color: rgb(35,105,243);
 }
 
 .info{
@@ -586,7 +586,7 @@ footer{
     
       height: 3px;
         
-        background-color: rgb(0, 0, 255);
+        background-color: rgb(35,105,243);
         font-size:8px;
         position: relative;
         top: 10px;
@@ -624,7 +624,7 @@ footer{
     content: "";
   
     height: 3px;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(35,105,243);
     font-size:8px;
     position: relative;
     top: 10px;
@@ -649,7 +649,7 @@ footer{
         align-self: center;
         width: 210px;
         padding-right: 10px;
-        color:rgb(0, 0, 255);
+        color:rgb(35,105,243);
         
         
         }
