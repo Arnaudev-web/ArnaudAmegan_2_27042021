@@ -682,8 +682,12 @@ footer{
         flex-direction: column-reverse;
     }
     .populaires-container{
-        width: 88%;
+        width: 100%;
         padding-bottom: 50px;
+        margin-left: 0rem;
+        border-radius: 0px;
+            
+        }
     }
     .heberg-container{
         width: 90%;
