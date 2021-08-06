@@ -71,8 +71,6 @@ transition: color;
 }
 
 .hebergement:hover{
-    display: block;
-    content: "";
     color: rgb(0, 0, 255);
        
   }
@@ -98,8 +96,6 @@ top: -33px;
   }
 
   .activites:hover{
-    display: block;
-    content: "";
     color: rgb(0, 0, 255);     
   }
 
