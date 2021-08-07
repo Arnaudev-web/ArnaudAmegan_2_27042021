@@ -24,6 +24,8 @@ img{
   display: block;
 }
 
+
+
 /* header start */
 
 .top{
@@ -35,6 +37,8 @@ img{
     height: 100px;
     font-size: 1rem;
 }
+
+
 
 .logoHeader{
     margin-left: 2rem;  
@@ -48,9 +52,10 @@ grid-column: 2;
 text-align: center; 
 display: block;
 color:rgb(24, 24, 24);
--webkit-transition: color;
-transition: color;
 }
+
+
+
 
 .hebergement:hover::before{
   display: block;
@@ -60,20 +65,19 @@ transition: color;
   background-color: rgb(35,105,243);
   font-size:8px;
   position: relative;
- 
+  
 }
 
-.hebergement:hover{
-    color: rgb(35,105,243);
-       
+.hebergement:hover{ 
+   color: rgb(35,105,243);
   }
+
 
 .activites{
 grid-row: 2; 
 grid-column: 3; 
 text-align: center;
 display: block;
-color:rgb(24, 24, 24);
 }
 
 .activites:hover::before
@@ -84,26 +88,27 @@ height: 3px;
 background-color: rgb(35,105,243);
 font-size:8px;
 position: relative;
-top: -33px;
-   
-  }
+top: -33px;   
+}
 
-  .activites:hover{
-    color: rgb(35,105,243);   
-  }
+.activites:hover{ 
+    color: rgb(35,105,243);
+   }
 
 .inscrire
 {
 grid-row: 2; 
 grid-column:4; 
 text-align:center;
-color:rgb(35,105,243);
+color: rgb(35,105,243);
 font-weight: bold;
 }
 
 /* header end */
 
+
 /* Recherche et filtre start */
+
 
 .searchTitle h1{
     margin-top: 2rem;
@@ -149,7 +154,7 @@ font-weight: bold;
 
 .searchRight{
     width: 130px;
-    background-color: rgb(35,105,243);
+    background-color: #0065FC;
     border-radius: 0 15px 15px 0;
 }
 
@@ -214,7 +219,7 @@ font-weight: bold;
 }
 
 .filterDiv .filter-left i{
-    color: rgb(35,105,243);
+    color: rgb(0, 0, 255);
 }
 
 
@@ -226,7 +231,7 @@ font-weight: bold;
 }
 
 .searchText i{
-    color: rgb(35,105,243);
+    color: #0065FC;
 }
 
 .info{
@@ -247,6 +252,7 @@ font-weight: bold;
 
 
 /* Location start */
+
 
 .hebergement-global{
     display: flex;
@@ -366,7 +372,8 @@ font-weight: bold;
     font-size: 1.35rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+   
 }
 
 .populaires-container .heberg:first-of-type{
@@ -400,6 +407,7 @@ font-weight: bold;
 .populaires-container .heberg-txt p {
     margin-top: -2rem;
     
+
 }
 
 .populaires-container .heberg:nth-of-type(1) .heberg-bg{
@@ -553,17 +561,15 @@ footer{
       display: grid;
       grid-template-columns:  1fr 1fr;
       grid-template-rows:  1fr 1fr;
-  
       width:100%;
-      
       font-size: 1rem;
   }
   
   .hebergement{
     grid-row: 3; 
     grid-column: 1; 
-    text-align: center; 
-        display: grid;   
+    text-align:right;
+    display: grid;   
     }
     .hebergement:hover::after
     {
@@ -588,7 +594,7 @@ footer{
     
       height: 3px;
     
-        background-color:rgb(242,242,242);
+        background-color: grey;
         font-size:8px;
         position: relative;
         top: 10px;
@@ -623,7 +629,7 @@ footer{
     display: block;
     content: "";
     height: 3px;
-    background-color:rgb(242,242,242);
+    background-color: grey;
     font-size:8px;
     position: relative;
     top: 10px
@@ -637,6 +643,7 @@ footer{
         width: 210px;
         padding-right: 10px;
         color:rgb(35,105,243);
+
         
         
         }
@@ -650,7 +657,12 @@ footer{
         width: 50%;
         text-align: center;
     }
-
+    /*
+    .phoneHeader a:first-of-type::before{
+        top: unset;
+        bottom: -10px;
+    }
+    */
     .noPhone{
         display: none;
     }
@@ -673,16 +685,25 @@ footer{
         width: 100%;
         padding-bottom: 50px;
         margin-left: 0rem;
-        border-radius: 0px;
-            
+        border-radius: 0px;  
         }
-    }
     .heberg-container{
         width: 90%;
         background-color: white;
+        
     }
     .heberg-container .heberg{
-        width: 90%;
+        width: 90%;  
+    }
+
+    .heberg-container h2 {
+        margin-top: 5px;
+        margin-left: 0.1rem;
+        font-size: 1.35rem;
+    }
+
+    .activites h2 {
+      text-align: left;
     }
   
     .grid-list{
@@ -713,5 +734,6 @@ footer{
         width: 100%;
         margin-left: 2rem;
     }
+  }
   
   /* Media queries end */
