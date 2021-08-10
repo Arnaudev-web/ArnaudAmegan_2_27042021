@@ -73,14 +73,15 @@ color:rgb(24, 24, 24);
   }
 
 
-.activites{
+.activite{
 grid-row: 2; 
 grid-column: 3; 
 text-align: center;
 display: block;
+color:rgb(24, 24, 24);
 }
 
-.activites:hover::before
+.activite:hover::before
 {
 display: block;
 content: "";
@@ -91,7 +92,7 @@ position: relative;
 top: -33px;   
 }
 
-.activites:hover{ 
+.activite:hover{ 
     color: rgb(35,105,243);
    }
 
@@ -546,7 +547,7 @@ footer{
   }
   @media screen and (max-width: 500px){
   
-    .activites:hover::before
+    .activite:hover::before
     {
       display: none;
     }
@@ -597,20 +598,17 @@ footer{
         background-color: grey;
         font-size:8px;
         position: relative;
-        top: 10px;
-    
-        
-     
+        top: 10px; 
       }
   
-    .activites{
+    .activite{
       grid-row: 3; 
       grid-column: 2; 
       text-align: center;
       display: block;
       }
   
-      .activites:hover::after
+      .activite:hover::after
   {
     display: block;
   
@@ -624,7 +622,7 @@ footer{
     color:#0065FC;
     }
   
-    .activites::after
+    .activite::after
     {
     display: block;
     content: "";
