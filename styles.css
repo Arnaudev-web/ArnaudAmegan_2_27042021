@@ -36,6 +36,7 @@ img{
     width:100%;
     height: 100px;
     font-size: 1rem;
+    grid-column-gap: 10px;
 }
 
 
@@ -43,7 +44,7 @@ img{
 .logoHeader{
     margin-left: 2rem;  
     grid-column: 1;
-    grid-row: 1;  
+    grid-row: 2;  
 }
 
 .hebergement{
@@ -52,6 +53,7 @@ grid-column: 2;
 text-align: center; 
 display: block;
 color:rgb(24, 24, 24);
+align-self: end;
 }
 
 
@@ -79,6 +81,7 @@ grid-column: 3;
 text-align: center;
 display: block;
 color:rgb(24, 24, 24);
+align-self: end;
 }
 
 .activite:hover::before
@@ -103,6 +106,7 @@ grid-column:4;
 text-align:center;
 color: rgb(35,105,243);
 font-weight: bold;
+align-self: end;
 }
 
 /* header end */
@@ -248,6 +252,10 @@ font-weight: bold;
 .searchText p {
     margin-left: 1rem;
 }
+
+.phoneLogo{
+    display: none;
+  }
 
 /* Recherche et filtre end */
 
@@ -528,210 +536,271 @@ footer{
 
 /* Media queries start */
 
-.phoneHeader{
-    display: none;
-    justify-self: center;
-    align-items: center;
-  }
-  .phoneLogo{
-    display: none;
-  }
-  .searchRight button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .filtretitle{
-    margin: 2rem 0 0 2rem;
-  }
-  @media screen and (max-width: 500px){
-  
-    .activite:hover::before
-    {
-      display: none;
+
+
+@media screen and (max-width:1024px)
+{
+
+    .hebergement-global{
+        display: block;
+        flex-direction: column;
+       
     }
-  
-    .hebergement:hover::before
-    {
-      display: none;
-    }
-  
-    .top{
-  
-      display: grid;
-      grid-template-columns:  1fr 1fr;
-      grid-template-rows:  1fr 1fr;
-      width:100%;
-      font-size: 1rem;
-  }
-  
-  .hebergement{
-    grid-row: 3; 
-    grid-column: 1; 
-    text-align:right;
-    display: grid;   
-    }
-    .hebergement:hover::after
-    {
-      display: block;
     
-      content: "";
-    
-      height: 3px;
+    .heberg-container{
+        width : 95%;
+        display: block;
+        margin: 10px auto;
+        background-color: #f2f2f2;
+        border-radius: 20px;
         
-        background-color: rgb(35,105,243);
-        font-size:8px;
-        position: relative;
-        top: 10px;
+    }
+
+    .heberg-list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 20px;
+        justify-items: center;
+    }
+    
+    
+    
+    .heberg{
+        justify-content:flex-end;
+        height: 200px;
+        width: 90%;
+        margin-top: 1rem;
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
         
-      }
+    }
   
-      .hebergement::after
-    {
-      display: block;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+
+    .logoHeader{
+        margin-left: 2rem;  
+        grid-column: 1;
+        grid-row: 1;  
+    }
     
-      content: "";
-    
-      height: 3px;
-    
-        background-color: grey;
-        font-size:8px;
-        position: relative;
-        top: 10px; 
+    .phoneHeader{
+        display: none;
+        justify-self: center;
+        align-items: center;
       }
-  
-    .activite{
-      grid-row: 3; 
-      grid-column: 2; 
-      text-align: center;
-      display: block;
+     
+      .searchRight button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-  
-      .activite:hover::after
+      
+      .filtretitle{
+        margin: 2rem 0 0 2rem;
+      
+    }
+
+  .activite:hover::before
+  {
+    display: none;
+  }
+
+  .hebergement:hover::before
+  {
+    display: none;
+  }
+
+  .top{
+
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    width:100%;
+    font-size: 1rem;
+    grid-column-gap:0px;
+   
+}
+
+.hebergement{
+  grid-row: 3; 
+  grid-column: 1; 
+  text-align:right;
+  display: grid;   
+  }
+  .hebergement:hover::after
   {
     display: block;
   
     content: "";
   
     height: 3px;
-    background-color: rgb(35,105,243);
-    font-size:8px;
-    position: relative;
-    top: 10px;
-    color:#0065FC;
+      
+      background-color: rgb(35,105,243);
+      font-size:8px;
+      position: relative;
+      top: 10px;
+      
     }
-  
-    .activite::after
-    {
+
+    .hebergement::after
+  {
     display: block;
+  
     content: "";
+  
     height: 3px;
-    background-color: grey;
-    font-size:8px;
-    position: relative;
-    top: 10px
-    }
   
-      .inscrire{
-        grid-row: 1; 
-        grid-column: 2; 
-        text-align: right;
-        align-self: center;
-        width: 210px;
-        padding-right: 10px;
-        color:rgb(35,105,243);
-
-        
-        
-        }
-    .noPhoneHeader{
-        display: none;
-    }
-    .phoneHeader{
-        display: flex;
-    }
-    .phoneHeader a{
-        width: 50%;
-        text-align: center;
-    }
-    /*
-    .phoneHeader a:first-of-type::before{
-        top: unset;
-        bottom: -10px;
-    }
-    */
-    .noPhone{
-        display: none;
-    }
-    .phoneLogo{
-        display: flex;
-    }
-  
-    .searchRight{
-        width: 50px;
-    }
-    .searchbar{
-        margin-left: 0;
-        margin: 0 auto;
-        margin-top: 2rem;
-    }
-    .hebergement-global{
-        flex-direction: column-reverse;
-    }
-    .populaires-container{
-        width: 100%;
-        padding-bottom: 50px;
-        margin-left: 0rem;
-        border-radius: 0px;  
-        }
-    .heberg-container{
-        width: 90%;
-        background-color: white;
-        
-    }
-    .heberg-container .heberg{
-        width: 90%;  
+      background-color: grey;
+      font-size:8px;
+      position: relative;
+      top: 10px; 
     }
 
-    .heberg-container h2 {
-        margin-top: 5px;
-        margin-left: 0.1rem;
-        font-size: 1.35rem;
+  .activite{
+    grid-row: 3; 
+    grid-column: 2; 
+    text-align: center;
+    display: block;
     }
 
-    .activites h2 {
-      text-align: left;
-    }
-  
-    .grid-list{
-        margin: 0 2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
-        gap: 20px;
-        grid-auto-rows: minmax(200px, auto);
-    }
-    .one{
-        grid-column: 1;
-        grid-row: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    .four{
-        grid-column: 1;
-        grid-row: 4;
-    }
-    .grid-box{
-        height: 175px;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .footer-box{
-        width: 100%;
-        margin-left: 2rem;
-    }
+    .activite:hover::after
+{
+  display: block;
+
+  content: "";
+
+  height: 3px;
+  background-color: rgb(35,105,243);
+  font-size:8px;
+  position: relative;
+  top: 10px;
+  color:#0065FC;
   }
-  
+
+  .activite::after
+  {
+  display: block;
+  content: "";
+  height: 3px;
+  background-color: grey;
+  font-size:8px;
+  position: relative;
+  top: 10px
+  }
+
+    .inscrire{
+      grid-row: 1; 
+      grid-column: 2; 
+      text-align: right;
+      align-self: center;
+      width: 210px;
+      padding-right: 10px;
+      color:rgb(35,105,243);
+
+      
+      
+      }
+  .noPhoneHeader{
+      display: none;
+  }
+  .phoneHeader{
+      display: flex;
+  }
+  .phoneHeader a{
+      width: 50%;
+      text-align: center;
+  }
+ 
+  .noPhone{
+      display: none;
+  }
+  .phoneLogo{
+      display: flex;
+  }
+
+  .searchRight{
+      width: 50px;
+  }
+  .searchbar{
+      margin-left: 0;
+      margin: 0 auto;
+      margin-top: 2rem;
+  }
+  .hebergement-global{
+      flex-direction: column-reverse;
+  }
+  .populaires-container{
+      width: 100%;
+      padding-bottom: 50px;
+      margin-left: 0rem;
+      border-radius: 0px;  
+      }
+  .heberg-container{
+      width: 90%;
+      background-color: white;
+      
+  }
+  .heberg-container .heberg{
+      width: 90%;  
+  }
+
+.heberg-list{
+    grid-template-columns: 1fr}
+
+  .heberg-container h2 {
+      margin-top: 5px;
+      margin-left: 0.1rem;
+      font-size: 1.35rem;
+  }
+
+  .activites h2 {
+    text-align: left;
+  }
+
+  .grid-list{
+      margin: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6,1fr);
+      gap: 20px;
+      grid-auto-rows: minmax(200px, auto);
+  }
+  .one{
+      grid-column: 1;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+  }
+  .four{
+      grid-column: 1;
+      grid-row: 4;
+  }
+  .grid-box{
+      height: 175px;
+  }
+  footer{
+      flex-direction: column;
+  }
+  .footer-box{
+      width: 100%;
+      margin-left: 2rem;
+  }
+}
   /* Media queries end */
+
+
+
+ 
+
+
+
