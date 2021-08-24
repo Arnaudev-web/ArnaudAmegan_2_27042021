@@ -296,6 +296,7 @@ align-self: end;
     flex-direction: column;
     align-items: center;
     box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
 }
 
 .heberg-container button{
@@ -452,6 +453,7 @@ align-self: end;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
 }
 
 .grid-box .grid-bg{
